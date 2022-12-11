@@ -11,7 +11,8 @@ Integrantes del grupo:
 ## Diseño del Datawarehouse
 
 ### Proceso de ventas
-![Image text]()
+![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/DW_Ventas_AlmacenesElRey.png)
+![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/DW_Ventas_AlmacenesElRey_FactlessTable.png)
 
 ### Proceso de inventario
-![Image text]()
+![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/DW_Inventario_AlmacenesElRey.png)
