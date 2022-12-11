@@ -16,3 +16,16 @@ Integrantes del grupo:
 
 ### Proceso de inventario
 ![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/DW_Inventario_AlmacenesElRey.png)
+
+## Configuración de las tablas dimensión
+
+| DimCategoria |
+| --- | --- |
+| Atributo | Tipo SCD |
+| --- | --- |
+| categoriaKey |  |
+| categoriaID | 0 |
+| nombre | 1 |
+| tipoProducto | 1 |
+| departamento | 1 |
+| estado | 1 |
