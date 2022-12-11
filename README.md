@@ -188,40 +188,41 @@ scd_active bit)
 ## Componentes utilizados en AWS
 
 ### * AMAZON S3.
-  Nombre del Bucket: almaceneselrey2022 
-  Region de AWS: EE.UU.Este (Norte de Virginia) us-east-1
-  Propiedades de los Objetos: ACL deshabiltiadas.
+  Nombre del Bucket: almaceneselrey2022  <br>
+  Region de AWS: EE.UU.Este (Norte de Virginia) us-east-1 <br>
+  Propiedades de los Objetos: ACL deshabiltiadas. <br>
   Estructura de Capetas:
 
+  ![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/S3_EstructuraCarpetas.PNG)
+
 ### * AMAZON REDSHIFT.
-  Identificador del clúster: redshift-cluster-proyecto
-  Tipo de nodo: dc2.large
-  Cómputo: 2 CPU virtuales
-  Número de nodos: 1
-  Nombre de la base de datos: dev
-  Puerto: 5439
-  Nombre de usuario del administrador: proyectoues
-  Contraseña de usuario administrador: Proyectoues2022
-  Zona de disponibilidad: us-east-1e
+  Identificador del clúster: redshift-cluster-proyecto  <br>
+  Tipo de nodo: dc2.large  <br>
+  Cómputo: 2 CPU virtuales  <br>
+  Número de nodos: 1  <br>
+  Nombre de la base de datos: dev  <br>
+  Puerto: 5439  <br>
+  Nombre de usuario del administrador: proyectoues  <br>
+  Contraseña de usuario administrador: Proyectoues2022  <br>
+  Zona de disponibilidad: us-east-1e  <br>
 
 ### *Identity and Access Management (IAM)
- Usuarios creados:
-- Nombre de usuario: admingg
-   Descripción: Administrador general de AWS
-   Contraseña: admingg
-   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console
-   Politica: AdministratorAccess
- - Nombre de usuario: usuarioS3Lectura
-   Descripción: usuario solo de lectura para Amazon S3
-   Contraseña: c@ntraseña
-   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console
-   Politica: AmazonS3ReadOnlyAccess
- - Nombre de usuario: proyecto
-   Descripción: usuario administrador de Amazon S3
-   Contraseña: Proyecto22
-   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console
-   Politica: AmazonS3FullAccess  
+ Usuarios creados:  <br>
+- Nombre de usuario: admingg  <br>
+   Descripción: Administrador general de AWS  <br>
+   Contraseña: admingg  <br>
+   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console  <br>
+   Politica: AdministratorAccess  <br>
+ - Nombre de usuario: usuarioS3Lectura  <br>
+   Descripción: usuario solo de lectura para Amazon S3  <br>
+   Contraseña: c@ntraseña  <br>
+   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console  <br>
+   Politica: AmazonS3ReadOnlyAccess  <br>
+ - Nombre de usuario: proyecto  <br>
+   Descripción: usuario administrador de Amazon S3  <br>
+   Contraseña: Proyecto22  <br>
+   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console  <br>
+   Politica: AmazonS3FullAccess  <br>  
 
-### Estructura de carpetas utilizada en AWS
 
-![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/S3_EstructuraCarpetas.PNG)
+
