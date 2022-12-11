@@ -184,3 +184,44 @@ scd_start date,
 scd_end date,
 scd_active bit)
 ```
+
+## Componentes utilizados en AWS
+
+### * AMAZON S3.
+  Nombre del Bucket: almaceneselrey2022 
+  Region de AWS: EE.UU.Este (Norte de Virginia) us-east-1
+  Propiedades de los Objetos: ACL deshabiltiadas.
+  Estructura de Capetas:
+
+### * AMAZON REDSHIFT.
+  Identificador del clúster: redshift-cluster-proyecto
+  Tipo de nodo: dc2.large
+  Cómputo: 2 CPU virtuales
+  Número de nodos: 1
+  Nombre de la base de datos: dev
+  Puerto: 5439
+  Nombre de usuario del administrador: proyectoues
+  Contraseña de usuario administrador: Proyectoues2022
+  Zona de disponibilidad: us-east-1e
+
+### *Identity and Access Management (IAM)
+ Usuarios creados:
+- Nombre de usuario: admingg
+   Descripción: Administrador general de AWS
+   Contraseña: admingg
+   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console
+   Politica: AdministratorAccess
+ - Nombre de usuario: usuarioS3Lectura
+   Descripción: usuario solo de lectura para Amazon S3
+   Contraseña: c@ntraseña
+   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console
+   Politica: AmazonS3ReadOnlyAccess
+ - Nombre de usuario: proyecto
+   Descripción: usuario administrador de Amazon S3
+   Contraseña: Proyecto22
+   Enlace de sesión de la consola: https://717949482576.signin.aws.amazon.com/console
+   Politica: AmazonS3FullAccess  
+
+### Estructura de carpetas utilizada en AWS
+
+![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/S3_EstructuraCarpetas.png)
