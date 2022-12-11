@@ -124,4 +124,63 @@ Tabla : DimProductoFactlessFuenteInventario
 | cantidadPorFuente | 1 |
 | estado | 1 |
 
-    
+## Configuraciones del proyecto
+
+Para crear las Dimensiones se debe crear una base de datos temporal en Microsoft Sql Server, con el nombre: AlmacenesElRey_Temporal
+y ejecutar el siguiente script:
+
+``` sql
+create table DimCategoria(
+categoriaKey int not null primary key, --Llave surrogada
+categoriaId int not null,  --Llave de negocio
+nombre varchar(255),
+tipoProducto varchar(255),
+departamento varchar(255),
+estado varchar(50))
+
+create table DimCupon(
+cuponKey int not null primary key, --Llave surrogada
+cuponID int not null, --Llave de negocio
+nombre varchar(255),
+descripcion text,
+codigo varchar(255),
+cantidadCupones int,
+cantidadUsados int,
+fechaInicio date,
+fechaFin date,
+estado varchar(50))
+
+create table DimFuenteInventario(
+fuenteInventarioKey int not null primary key, --Llave surrogada
+fuenteInventarioID varchar(255) not null, --Llave de negocio
+nombre varchar(255),
+descripcion varchar(255),
+pais varchar(255),
+ciudad varchar(255))
+
+create table DimPromocion(
+promocionKey int not null primary key, --Llave surrogada
+promocionID int not null, --Llave de negocio
+nombre varchar(255),
+descripcion text,
+fechaInicio date,
+fechaFin date,
+cantidadDescuento float(10),
+estaActiva varchar(50))
+
+create table DimProducto(
+productoKey int not null primary key, --Llave surrogada
+productoId int not null, --Llave de negocio
+categoriaKey int not null,
+nombre varchar(255),
+descripcion varchar(255),
+talla varchar(255),
+color varchar(255),
+sku varchar(64),
+precio decimal(20,6),
+costo decimal(20,6),
+estado varchar(50),
+scd_start date,
+scd_end date,
+scd_active bit)
+```
