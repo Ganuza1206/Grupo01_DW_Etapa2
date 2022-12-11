@@ -224,4 +224,4 @@ scd_active bit)
 
 ### Estructura de carpetas utilizada en AWS
 
-![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/S3_EstructuraCarpetas.png)
+![Image text](https://github.com/Ganuza1206/Grupo01_DW_Etapa2/blob/main/imagenes/S3_EstructuraCarpetas.PNG)
